@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Ministry of Trap</title>
+</head>
+<body>
+  <h1>Registration Form</h1>
+  <p id="description">Please fill out and submit this form with all the correct information required</p>
+
+  <form id="survey-form" action="https://formspree.io/f/xzzpworj" method="POST">
+    <!-- First Name Field -->
+    <div class="form-group">
+      <label for="first-name">First Name:</label>
+      <input id="first-name" type="text" name="first-name" placeholder="Enter your first name" required>
+    </div>
+
+    <!-- Last Name Field -->
+    <div class="form-group">
+      <label for="last-name">Last Name:</label>
+      <input id="last-name" type="text" name="last-name" placeholder="Enter your last name" required>
+    </div>
+
+    <!-- Email Field -->
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input id="email" type="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <!-- Phone Number Field (Botswana Mobile Numbers Only) -->
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input id="phone" type="tel" name="phone" placeholder="7XXXXXXXX" 
+             pattern="7[0-9]{7}" required>
+      <small>Format: 7XXXXXXXX (Botswana mobile numbers only)</small>
+    </div>
+
+    <!-- Date of Birth Field -->
+    <div class="form-group">
+      <label for="dob">Date of Birth:</label>
+      <input id="dob" type="date" name="dob" required>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
